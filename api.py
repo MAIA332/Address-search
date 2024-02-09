@@ -27,7 +27,7 @@ def cosseno(formated,endereco):
     else:
         return "Endereço não encontrado"
 
-# ===================== TESTE POR N-GRAM ================
+# ===================== TESTE POR N-GRAM (VIGENTE) ================
 def preprocess_text(text):
     text = text.lower()
     text = text.translate(str.maketrans('', '', string.punctuation))
@@ -68,5 +68,4 @@ app = FastAPI()
 @app.post("/address/")
 async def create_item(item: Item):
     similaritys = [calculate_similarity(item.name,i,1) for i in formated]
-    """ corrected_address = features["cosseno"](formated,item.name) """
     return formated[similaritys.index(max(similaritys))]
