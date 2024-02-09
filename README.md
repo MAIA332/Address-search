@@ -4,7 +4,7 @@ Métodos de comparação de strings aplicados em forma de API, com fim de busca 
 
 ## Objetivo
 
-O objetivo deste projeto é fonecer através de API uma forma de formatar endereços, seja reorganizando as informações já passadas ou consultar através de uma informação incompleto
+O objetivo deste projeto é fonecer através de API uma forma de formatar endereços, seja reorganizando as informações já passadas ou consultar através de uma informação incompleta
 
 ## Como Usar
 
